@@ -1,0 +1,8 @@
+<div *ngFor="let p of listProdcut; let i = index">
+    <div *ngIf="id == p.id">
+        <li>
+            {{p.id}}
+            {{p.title}}
+        </li>
+    </div>
+</div>

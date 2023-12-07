@@ -1,0 +1,19 @@
+<table class="table" border="3">
+    <tr>
+        <td>ID</td>
+        <td>Titre</td>
+        <td>price</td>
+        <td>quantite</td>
+        <td>like</td>
+        <td></td>
+    </tr>
+    <tr *ngFor="let p of listProdcut ;let i=index">
+        <td>{{p.id}}</td>
+        <td>{{p.title}}</td>
+        <td>{{p.price}}</td>
+        <td>{{p.quantity}}</td>
+        <td>{{p.like}}</td>
+        <td><a [routerLink]="['details', p.id]" class="btn btn-primary">show product</a></td>
+    </tr>
+</table>
+<a href="/appartement/addproduct" class="btn btn-primary">Add Appartement</a>
